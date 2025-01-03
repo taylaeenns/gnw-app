@@ -28,8 +28,16 @@ router.get('/home-insurance', (req, res) => {
   res.render('home-insurance');
 });
 
-router.get('/business-insurance', (req, res) => {
-  res.render('business-insurance');
+router.get('/dwelling-fire', (req, res) => {
+  res.render('dwelling-fire');
+});
+
+router.get('/modular-home-insurance', (req, res) => {
+  res.render('modular-home-insurance');
+});
+
+router.get('/auto-insurance', (req, res) => {
+  res.render('auto-insurance');
 });
 
 router.get('/privacy-policy', (req, res) => {
@@ -45,48 +53,107 @@ router.get('/find-agent', (req, res) => {
   res.render('find-agent');
 });
 
-router.get('/agents-hilo', (req, res) => {
-  res.render('agents-hilo');
+router.get('/minnesota-list', (req, res) => {
+  res.render('minnesota-list');
 });
 
-router.get('/agents-honolulu', (req, res) => {
-  res.render('agents-honolulu');
+router.get('/agents-oklahoma', (req, res) => {
+  res.render('agents-oklahoma');
 });
 
-router.get('/agents-kahului', (req, res) => {
-  res.render('agents-kahului');
+router.get('/agents-blaine', (req, res) => {
+  res.render('agents-blaine');
 });
 
-router.get('/agents-kailua-kona', (req, res) => {
-  res.render('agents-kahului');
+router.get('/agents-brinerd', (req, res) => {
+  res.render('agents-brinerd');
 });
 
-router.get('/agents-kapolei', (req, res) => {
-  res.render('agents-kapolei');
+router.get('/agents-bloomington', (req, res) => {
+  res.render('agents-bloomington');
 });
 
-router.get('/agents-kaunakakai', (req, res) => {
-  res.render('agents-kaunakakai');
+router.get('/agents-cannon-falls', (req, res) => {
+  res.render('agents-cannon-falls');
 });
 
-router.get('/agents-kihei', (req, res) => {
-  res.render('agents-kihei');
+router.get('/agents-coon-rapids', (req, res) => {
+  res.render('agents-coon-rapids');
 });
 
-router.get('/agents-lahaina', (req, res) => {
-  res.render('agents-lahaina');
+
+router.get('/agents-edina', (req, res) => {
+  res.render('agents-edina');
 });
 
-router.get('/agents-lihue', (req, res) => {
-  res.render('agents-lihue');
+
+router.get('/agents-excelsior', (req, res) => {
+  res.render('agents-excelsior');
 });
 
-router.get('/agents-wailuku', (req, res) => {
-  res.render('agents-wailuku');
+router.get('/agents-forest-lake', (req, res) => {
+  res.render('agents-forest-lake');
 });
 
-router.get('/agents-waipahu', (req, res) => {
-  res.render('agents-waipahu');
+router.get('/agents-golden-valley', (req, res) => {
+  res.render('agents-golden-valley');
+});
+
+router.get('/agents-lake-city', (req, res) => {
+  res.render('agents-lake-city');
+});
+
+router.get('/agents-lewiston', (req, res) => {
+  res.render('agents-lewiston');
+});
+
+router.get('/agents-new-hope', (req, res) => {
+  res.render('agents-new-hope');
+});
+
+router.get('/agents-new-prague', (req, res) => {
+  res.render('agents-new-prague');
+});
+
+router.get('/agents-northfield', (req, res) => {
+  res.render('agents-northfield');
+});
+
+router.get('/agents-plymouth', (req, res) => {
+  res.render('agents-plymouth');
+});
+
+router.get('/agents-rochester', (req, res) => {
+  res.render('agents-rochester');
+});
+
+router.get('/agents-rogers', (req, res) => {
+  res.render('agents-rogers');
+});
+
+router.get('/agents-savage', (req, res) => {
+  res.render('agents-savage');
+});
+
+router.get('/agents-st-louis', (req, res) => {
+  res.render('agents-st-louis');
+});
+
+router.get('/agents-stewartville', (req, res) => {
+  res.render('agents-stewartville');
+});
+
+router.get('/agents-virginia', (req, res) => {
+  res.render('agents-virginia');
+});
+
+router.get('/agents-white-bear-lake', (req, res) => {
+  res.render('agents-white-bear-lake');
+});
+
+
+router.get('/agents-winona', (req, res) => {
+  res.render('agents-winona');
 });
 
 router.get('/frequently-asked-questions', (req, res) => {

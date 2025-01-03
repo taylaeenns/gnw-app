@@ -1,8 +1,18 @@
+
 <%- include('partials/head') %>
         <div class="nav-portal">
             <h2>Find Agent</h2>
             <h6>
-                Home > Find Agent > Kaunakakai
+                <a href="/" style="text-decoration: none; color: white;">
+                    Home  
+                </a>
+                 <a href="/find-agent" style="text-decoration: none; color: white;">
+                    > Find Agent 
+                </a>
+                <a href="/minnesota-list" style="text-decoration: none; color: white;">
+                    > Minnesota
+                </a>
+                    > Rochester
             </h6>
             </div>
             <div class="map-page">
@@ -13,26 +23,38 @@
             </div>
             <script>
             const agents = [
+ 
                 {
-                    name: " Pancho Alcon, Ltd.",
-                    address: "75B Ala Malama Avenue",
-                    city: "Kaunakakai",
-                    state: "HI",
-                    zip: "96748",
-                    phone: "(808) 553-5403",
-                    website: "N/A",
-                    position: { lat: 21.09117, lng: -157.02125 }
-                },
-                {
-                    name: "John Doe Insurance",
-                    address: "123 Main St",
-                    city: "Kaunakakai",
-                    state: "HI",
-                    zip: "96748",
-                    phone: "(808) 555-1234",
-                    website: "www.johndoeinsurance.com",
-                    position: { lat: 21.0950, lng: -157.0250 }
+                name: "All Apple Agency",
+                address: "2215 2nd St SW, Ste 100H",
+                city: "Rochester",
+                state: "MN",
+                zip: "55902",
+                phone: "(507) 285-5760",
+                website: "www.allappleagency.com",
+                position: { lat: 44.02216, lng: -92.49701 }
+            },
+            {
+                name: "Atlas Insurance Brokers LLC",
+                address: "1831 S Broadway",
+                city: "Rochester",
+                state: "MN",
+                zip: "55902",
+                phone: "(507) 424-3648",
+                website: "https://www.atlasinsurancerochester.com/south-rochester.html",
+                position: { lat: 43.99523, lng: -92.463449 }
+            },
+            {
+                name: "Atlas Insurance Brokers LLC",
+                address: "5721 Bandel Road NW",
+                city: "Rochester",
+                state: "MN",
+                zip: "55903",
+                phone: "(507) 252-8720",
+                website: "www.atlasinsurancerochester.com",
+                position: { lat: 44.082208, lng: -92.508802},
             }];
+            
             
             const cardContainer = document.querySelector('.card-container');
 
@@ -40,13 +62,13 @@
             const markers = [];
 
             async function initMap() {
-                const Kaunakakai = { lat: 21.0910, lng: -157.0186 };
+                const Rochester = { lat: 44.0121, lng: -92.4802 };
                 const { Map } = await google.maps.importLibrary("maps");
 
                 map = new Map(document.getElementById("map"), {
                     zoom: 12,
-                    center: Kaunakakai,
-                    mapId: "KAUNAKAKAI_MAP_ID",
+                    center: Rochester,
+                    mapId: "ROCHESTER_MAP_ID",
                   });
 
             agents.forEach((agent, index) => {
@@ -72,29 +94,29 @@
 
             // Create marker
             const infowindow = new google.maps.InfoWindow({
-                content: `
-                    <div style="
-                        font-family: 'Open Sans', sans-serif; 
-                        font-size: 14px; 
-                        color: #333;
-                        max-width: 250px; 
-                        padding: 10px; 
-                        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
-                        border-radius: 8px;
-                    ">
-                        <h2 style="font-size: 1.1rem; margin-top: 0; color: #00539a;">${agent.name}</h2>
-                        <p style="margin: 0;">
-                            <strong>Address:</strong> ${agent.address}<br>
-                            <strong>City:</strong> ${agent.city}<br>
-                            <strong>State:</strong> ${agent.state}<br>
-                            <strong>Zip Code:</strong> ${agent.zip}<br>
-                            <strong>Phone Number:</strong> ${agent.phone}<br>
-                            <strong>Website:</strong> <a href="${agent.website}" target="_blank" style="color: #00539a; text-decoration: none;">${agent.website}</a>
-                        </p>
-                    </div>
-                `,
-                ariaLabel: agent.name,
-            });
+            content: `
+                <div style="
+                    font-family: 'Open Sans', sans-serif; 
+                    font-size: 14px; 
+                    color: #333;
+                    max-width: 250px; 
+                    padding: 10px; 
+                    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+                    border-radius: 8px;
+                ">
+                    <h2 style="font-size: 1.1rem; margin-top: 0; color: #00539a;">${agent.name}</h2>
+                    <p style="margin: 0;">
+                        <strong>Address:</strong> ${agent.address}<br>
+                        <strong>City:</strong> ${agent.city}<br>
+                        <strong>State:</strong> ${agent.state}<br>
+                        <strong>Zip Code:</strong> ${agent.zip}<br>
+                        <strong>Phone Number:</strong> ${agent.phone}<br>
+                        <strong>Website:</strong> <a href="${agent.website}" target="_blank" style="color: #00539a; text-decoration: none;">${agent.website}</a>
+                    </p>
+                </div>
+            `,
+            ariaLabel: agent.name,
+        });
 
             const marker = new google.maps.Marker({
                 map: map,

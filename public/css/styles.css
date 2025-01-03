@@ -6,9 +6,9 @@ body {
 
 /* Navigation */
 .logo {
-  width: 250px; /* Increase the width for a larger logo */
-  height: auto; /* Maintain aspect ratio */
-  margin-right: 20px; /* Adjust spacing between logo and menu */
+  width: 250px; 
+  height: auto; 
+  margin-right: 20px;
   cursor: pointer;
 }
 
@@ -62,7 +62,7 @@ body {
 
 .clicky-menu a:hover {
   background-color: #f0f0f0; /* Subtle hover effect */
-   color: #0072b5; /* Modern blue hover color */
+   color: #b50000; /* Modern blue hover color */
 }
 
 /* Dropdown Submenus */
@@ -99,7 +99,7 @@ body {
 
 .clicky-menu ul a:hover {
   background-color: #f0f0f0; /* Subtle hover effect for dropdown items */
-  color: #0072b5; /* Modern blue hover text */
+  color: #b50000; /* Modern blue hover text */
 }
 
 /* Dropdown Arrow Animation */
@@ -204,172 +204,7 @@ body {
     justify-content: space-between;
     align-items: center;
  }
-
- /* .nav-dis h2 {
-   font-size: 1.5rem;
-   margin-left: 20px;
- }
-
- .nav-dis h6 {
-   font-size: 0.9rem;
-   margin-right: 20px;
- }
-
- .nav-dis p {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 100;
-    font-size: 10px;
-    color: #eee;
-    align-items: center;
- } */
-
-/* Carousel Container */
-/* .modern-carousel {
-  position: relative;
-  width: 100%;
-  max-width: 1200px;
-  margin: auto;
-  overflow: hidden;
-  font-family: 'Open Sans', sans-serif;
-  border-radius: 8px; 
-} */
-
-/* Track and Slides */
-/* .carousel-track-container {
-  position: relative;
-  overflow: hidden;
-  height: 400px; 
-}
-
-.carousel-track {
-  display: flex;
-  transition: transform 0.5s ease-in-out; 
-  position: relative;
-}
-
-.carousel-slide {
-  min-width: 100%; 
-  position: relative; 
-  transition: opacity 0.5s ease-in-out; 
-  display: flex;
-  align-items: center; 
-  justify-content: center;
-  overflow: hidden;
-}
-
-.carousel-slide img {
-  width: 100%; 
-  height: 100%;
-  object-fit: cover;
-}
-
-.carousel-slide:not(.current) {
-  opacity: 0; 
-  pointer-events: none;
-}
-
-.carousel-slide.current {
-  opacity: 1;
-  pointer-events: auto; 
-} */
-
-/* Slide Content (Text and Buttons) */
-/* .slide-content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  text-align: center;
-  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
-}
-
-.slide-content h1 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
-.slide-content button {
-  padding: 0.5rem 1rem;
-  background-color: #0378d6;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s, transform 0.2s ease-in-out;
-}
-
-.slide-content button:hover {
-  background-color: #005bb5;
-  transform: scale(1.05);
-} */
-
-/* Buttons for Next/Previous */
-/* .carousel-button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  border: none;
-  color: white;
-  font-size: 2rem;
-  cursor: pointer;
-  z-index: 10;
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: background-color 0.3s ease-in-out;
-}
-
-.carousel-button.prev {
-  left: 10px;
-}
-
-.carousel-button.next {
-  right: 10px;
-}
-
-.carousel-button:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-.carousel-button:focus {
-  outline: none; 
-} */
-
-/* Dots for Navigation */
-/* .carousel-nav {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  gap: 10px;
-}
-
-.carousel-dot {
-  width: 10px;
-  height: 10px;
-  background-color: white;
-  border: none;
-  border-radius: 50%;
-  cursor: pointer;
-  opacity: 0.5;
-  transition: opacity 0.3s, transform 0.2s;
-}
-
-.carousel-dot.current {
-  opacity: 1;
-  background-color: #0378d6; 
-}
-
-.carousel-dot:hover {
-  transform: scale(1.2); 
-} */
-
+ 
  .desc {
    padding: 30px;
  }
@@ -397,62 +232,73 @@ body {
    font-weight: lighter;
  }
 
- .quotes {
-   padding: 40px;
-   display: flex;
-   justify-content: center;
-   gap: 10rem;
-   background-color: #ffffff;
- }
- .home-quote {
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   background-color: #ededed;
-   width: 25rem;
-   height: 25rem;
-   border-radius: 20px;
-   box-shadow: 5px 5px 10px #aaaaaab0;
- }
- 
- .business-quote {
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   background-color: #ededed;
-   width: 25rem;
-   height: 25rem;
-   border-radius: 20px;
-   box-shadow: 5px 5px 10px #aaaaaab0;
- }
 
- .quotes p {
-   font-size: small;
-   text-align: center;
-   margin-left: 30px;
-   margin-right: 30px;
- }
+ /* Hero Section Styling */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: url(https://images.unsplash.com/photo-1560520031-3a4dc4e9de0c?q=80&w=3173&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3DD) no-repeat center center/cover;
+  height: 60vh; /* Adjust height as needed */
+  color: white;
+  padding: 20px;
+}
+
+.hero-content {
+  max-width: 800px;
+  background: rgba(0, 0, 0, 0.534); /* Transparent background for readability */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.agent-btn {
+  width: 25%;
+   font-size: medium;
+   border-radius: 6px;
+   border: 1px solid #213f86;
+   background: #213f86;
+   color: #ffffff;
+   padding: 10px 20px;
+}
+
+.agent-btn:hover {
+  border-radius: 6px;
+   border: 1px solid #1c3673;
+   background: #1c3673;
+   color: white;
+   transform: scale(1.05);
+   cursor: pointer; 
+}
 
  .quote-btn {
    width: 90px;
    height: 28px;
    font-size: small;
    border-radius: 6px;
-   border: 1px solid #0478d6;
-   background: #0477d600;
-   color: #0478d6;
+   border: 1px solid #254286;
+   background: #254286;
+   color: #ffffff;
  }
 
  .quote-btn:hover{
-   width: 90px;
-   height: 28px;
-   font-size: small;
    border-radius: 6px;
-   border: 1px solid rgb(201, 201, 201);
-   background: #0463b1;
+   border: 1px solid #1f376e;
+   background: #1c3061;
    color: white;
+   transform: scale(1.05);
+   cursor: pointer; 
  }
  
 
@@ -461,7 +307,7 @@ body {
    display: flex;
    width: 70%;
    padding: 20px;
-   background: #00539a;
+   background: #041632;
    color: #ffffff;
    justify-content: center;
    align-items: center;
@@ -477,14 +323,16 @@ body {
    font-size: small;
    border-radius: 6px;
    border: 1px solid white;
-   background: #ffffff00;
+   background: #041632;
    color: #ffffff;
  }
 
  .find-agent:hover {
    border: 1px solid rgb(216, 216, 216);
-   background: #ffffff;
-   color: #0365b5;
+   background: #06224e;
+   color: #ffffff;
+   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+   transform: translateY(-0.75px);
  }
 
 .container {
@@ -722,7 +570,7 @@ td[colspan="4"] {
 .card-title {
   font-size: 1.6rem;
   margin-bottom: 10px;
-  color: rgb(0, 69, 124);
+  color: #00126b;
   font-weight: 600;
 }
 
@@ -784,7 +632,7 @@ td[colspan="4"] {
 }
 
 .faq-question {
-  background-color:  rgb(23, 84, 169);
+  background-color:  rgb(13, 47, 94);
   color:  #ebebeb;
   padding: 1em 1.5em;
   width: 100%;
@@ -799,7 +647,7 @@ td[colspan="4"] {
 }
 
 .faq-question:hover {
-  background-color:  rgb(17, 69, 142);
+  background-color:  rgb(133, 21, 21);
   color:  #cecccc;
 }
 
@@ -948,7 +796,7 @@ border-bottom: 2px solid rgb(232, 232, 232);
    position: absolute;
    left:0;
    bottom: -10px;
-   background-color: #3c6ffc;
+   background-color: #fc3c3c;
    height: 2px;
    box-sizing: border-box;
    width: 50px;
